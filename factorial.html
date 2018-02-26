@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Factorial of a Number</title>
+</head>
+<body>
+
+<img src="https://occ-0-2433-448.1.nflxso.net/art/01a47/1d9aaf76b9f3c133eaa9dbab22ef8e7d8f701a47.jpg" alt="Lelouch" title="code geass">
+
+<script>
+    
+    function factorial(num) {
+        if(num === 1) {
+            return 1;
+        }else {
+            var result = 1;
+            for(var i=1; i<=num; i++) {
+                result *= i;
+            }
+            return result;
+        }                       
+    }
+    
+    console.log("Factorial of 5 without recursion is ", factorial(5));
+    
+    function factorialRecursion(num) {
+        if (num === 1) {
+            return 1;
+        }else {
+            return num *(factorialRecursion(num - 1));
+        }
+    }
+    
+    console.log("Factorial of 10 with recursion is ", factorialRecursion(5));
+</script>        
+</body>
+</html>

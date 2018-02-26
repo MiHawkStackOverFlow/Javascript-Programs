@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Palindrome of a String</title>
+</head>
+<body>
+
+<img src="https://occ-0-2433-448.1.nflxso.net/art/01a47/1d9aaf76b9f3c133eaa9dbab22ef8e7d8f701a47.jpg" alt="Lelouch" title="code geass">
+
+<script>
+    // below function will remove whitespaces, special charaters and lowercase the string and  then will return true or false
+    function palindrome(str) {
+        var strMod = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+        var splitStringArray   = strMod.split("");           
+        var reverseArray       = splitStringArray.reverse(); 
+        var joinedArrayStrings = reverseArray.join(''); 
+        return joinedArrayStrings === strMod;         
+    }    
+    console.log("Is 'racecar' a palindrome ? ", palindrome("racecar"));
+    console.log("Is 'A man, a plan, a canal. Panama' palindrome ? ", palindrome("A man, a plan, a canal. Panama"));
+    console.log("Is '0_0 (: /-\ :) 0-0' a palindrome ?", palindrome("0_0 (: /-\ :) 0-0"));
+</script>        
+</body>
+</html>
