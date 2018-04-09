@@ -23,4 +23,4 @@
     To learn more, see GitHub Pages Help.
 7. https://www.codecademy.com/courses/deploy-a-website/lessons/github-pages/exercises/create-account 
    http://alignedleft.com/resources/cheap-web-hosting
-    
+8. Cookies vs seessionstorage vs localstorage        
