@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Person Prototype Example</title>
+</head>
+<body>
+
+<img src="https://occ-0-2433-448.1.nflxso.net/art/01a47/1d9aaf76b9f3c133eaa9dbab22ef8e7d8f701a47.jpg" alt="Lelouch" title="code geass">
+
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Person.prototype = {
+        getName: function() {
+            return this.name;
+        },
+        getAge: function() {
+            return this.age;
+        }
+    }
+
+    var chris = new Person("chris", 28);
+    var tom   = new Person("tom", 20);
+
+    console.log("tom's age is", tom.getAge());
+
+</script>        
+</body>
+</html>
