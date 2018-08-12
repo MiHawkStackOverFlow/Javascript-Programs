@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Basic Inheritance Example</title>
+</head>
+<body>
+
+<img src="https://occ-0-2433-448.1.nflxso.net/art/01a47/1d9aaf76b9f3c133eaa9dbab22ef8e7d8f701a47.jpg" alt="Lelouch" title="code geass">
+
+<script>
+    function Person(name) {
+        this.name = name;
+    }
+
+    Person.prototype.getName = function() {
+        return this.name;
+    }
+
+    function Author(name, books) {
+        Person.call(this, name);
+        this.books = books;
+    }
+
+    Author.prototype = new Person(); // Object.create(Person.prototype);
+    Author.prototype.constructor = Author;
+
+    Author.prototype.getBooks = function () {
+        return this.books;
+    }
+
+    var robert = new Author('Robert', ['Rich Dad Poor Dad', 'Real Estate Investing']);
+    console.log(robert.getName());
+    console.log(robert.getBooks());
+
+
+</script>        
+</body>
+</html>
