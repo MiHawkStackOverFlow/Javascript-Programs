@@ -1,2 +1,2 @@
-# Javascript-Programs-Practise
-Javascript programs for practise
+# Javascript-Programs
+Javascript programs
