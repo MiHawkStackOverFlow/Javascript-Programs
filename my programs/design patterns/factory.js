@@ -51,3 +51,19 @@ console.log(car instanceof Car);
 
 // Outputs: Car object of color "yellow", doors: 6 in a "brand new" state
 console.log(car);
+
+/**
+
+When to Use the Factory Pattern :-
+
+The Factory pattern can be especially useful when applied to the following situations:
+
+1. When our object or component setup involves a high level of complexity.
+
+2. When we need to easily generate different instances of objects depending on the environment we are in.
+
+3. When we’re working with many small objects or components that share the same properties.
+
+4. When composing objects with instances of other objects that need only satisfy an API contract 
+   (a.k.a., duck typing) to work. This is useful for decoupling.
+ */
